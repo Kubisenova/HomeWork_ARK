@@ -37,21 +37,21 @@
 // }
 
 
-// Второе решение
-Console.WriteLine("Введите трехзначное число: ");
-// число переводим в строку и задаём ей длину
-int size = Convert.ToInt32(Console.ReadLine());
-int number = size.ToString().Length;
-if (number < 3 || number > 3)
-{
-    Console.WriteLine("Вы ввели не трехзначное число");
-}
-else
-{
-    Console.WriteLine(size);
+// // Второе решение
+// Console.WriteLine("Введите трехзначное число: ");
+// // число переводим в строку и задаём ей длину
+// int size = Convert.ToInt32(Console.ReadLine());
+// int number = size.ToString().Length;
+// if (number < 3 || number > 3)
+// {
+//     Console.WriteLine("Вы ввели не трехзначное число");
+// }
+// else
+// {
+//     Console.WriteLine(size);
 
-    int numbC = size;
+//     int numbC = size;
 
-    numbC = (numbC / 10) % 10;
-    Console.WriteLine(numbC);
-}
+//     numbC = (numbC / 10) % 10;
+//     Console.WriteLine(numbC);
+// }
