@@ -2,7 +2,6 @@
 // является ли оно палиндромом.   
 // 14212 -> нет  23432 -> да  12821 -> да 
 
-
 Console.WriteLine("Введите число: ");
 string number = Console.ReadLine();
 int len = number.Length;
