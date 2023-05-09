@@ -7,11 +7,8 @@
 Console.WriteLine("Введите длину массива:  ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
-RandonNumbers(numbers);
-Console.WriteLine("В этом массиве: ");
-PrintArray(numbers);
-
-void RandonNumbers(int[] numbers)
+RandonNumbers(numbers); Console.WriteLine("В этом массиве: ");
+PrintArray(numbers); void RandonNumbers(int[] numbers)
 {
     for (int i = 0; i < size; i++)
     {
@@ -19,14 +16,12 @@ void RandonNumbers(int[] numbers)
     }
 }
 int count = 0;
-
 for (int x = 0; x < numbers.Length; x++)
 {
     if (numbers[x] % 2 == 0)
         count++;
 }
 Console.WriteLine($"из {numbers.Length} чисел, {count} четных");
-
 void PrintArray(int[] numbers)
 {
     Console.Write("[ ");
