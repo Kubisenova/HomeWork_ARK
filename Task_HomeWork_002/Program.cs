@@ -30,7 +30,7 @@ if (numberA > numberB)
 {
     Console.WriteLine("Первое число " + numberA + " больше второго числа " + numberB);
 }
-else
+if (numberA < numberB)
 {
     Console.WriteLine("Второе число " + numberB + " больше первого числа " + numberA);
 }
