@@ -52,24 +52,6 @@
 // }
 
 
-// Задача 13: Напишите программу, которая выводит третью
-// цифру заданного числа или сообщает, что третьей цифры нет.
-
-Console.Clear();
-
-Console.WriteLine("Введите число ");
-string text = Console.ReadLine();
-int number = Convert.ToInt32(text);
-
-
-if (number1 <= 3 || number1 >= 4)
-{
-    Console.WriteLine(" Это третья цифра " + number1);
-}
-else
-{
-    Console.WriteLine(" Здесь нет третьей цифры");
-}
 
 
 
@@ -117,3 +99,39 @@ else
 
 
 
+// Задача 13: Напишите программу, которая выводит третью
+// цифру заданного числа или сообщает, что третьей цифры нет.
+
+// Решение от преподавателя 
+Console.Clear();
+int Prompt(string message)
+{
+    Console.WriteLine(message);
+    string value = Console.ReadLine();
+    int result = Convert.ToInt32(value);
+    return result;
+}
+int GetThirdRank(int number)
+{
+    while (number > 999)
+    {
+        number /= 10;
+    }
+    return number % 10;
+
+}
+bool validateNumber(int number)
+{
+    if (number < 100)
+    {
+        Console.WriteLine("Третьей цифры нет ");
+        return false;
+    }
+    return true;
+}
+
+int number = Prompt("Введите число > ");
+if (validateNumber(number))
+{
+    Console.WriteLine(GetThirdRank(number));
+}
