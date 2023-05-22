@@ -70,18 +70,25 @@
 // Console.WriteLine("Вторая цифра этого числа " + number2);
 
 
-// Задача 10: Напишите программу, которая принимает на вход трёхзначное 
-// число и на выходе показывает вторую цифру этого числа.
+// Задача 10: Напишите программу, которая принимает на вход пятизнаяное число 
+//  и на выходе показывает вторую и третью цифру этого числа.
 
 // Решение 2 
 Console.Clear();
-Console.WriteLine("Введите трёхзначное число ");
-string text = Console.ReadLine();
-int number1 = Convert.ToInt32(text);
-(int number2 = (number1 / 10) % 10);
-Console.WriteLine("Вторая цифра это числа: " + number2);
+Console.WriteLine("Введите пятизначное число ");
+int size = Convert.ToInt32(Console.ReadLine());
+int number1 = size.ToString().Length;
 
-if (number1 > 100 || number1 < 99)
+if (number1 < 5 || number1 > 5)
 {
-    Console.WriteLine("Вы ввели НЕ трёхзначное число ");
+    Console.WriteLine("Вы ввели не пятизначное число");
 }
+else
+{
+      int number2 = size;
+
+    number2 = (number2 / 100) % 100;
+    Console.WriteLine(number2 + " Здесь показаны вторая и третья цифра пятизначного числа ");
+}
+
+
