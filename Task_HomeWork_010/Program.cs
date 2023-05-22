@@ -73,22 +73,42 @@
 // Задача 10: Напишите программу, которая принимает на вход пятизнаяное число 
 //  и на выходе показывает вторую и третью цифру этого числа.
 
-// Решение 2 
-Console.Clear();
-Console.WriteLine("Введите пятизначное число ");
-int size = Convert.ToInt32(Console.ReadLine());
-int number1 = size.ToString().Length;
+// // Решение 2 
+// Console.Clear();
+// Console.WriteLine("Введите пятизначное число ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int number1 = size.ToString().Length;
 
-if (number1 < 5 || number1 > 5)
+// if (number1 < 5 || number1 > 5)
+// {
+//     Console.WriteLine("Вы ввели не пятизначное число");
+// }
+// else
+// {
+//       int number2 = size;
+
+//     number2 = (number2 / 100) % 100;
+//     Console.WriteLine(number2 + " Здесь показаны вторая и третья цифра пятизначного числа ");
+// }
+
+
+
+
+// Решение моё 
+
+Console.Clear();
+Console.WriteLine("Введите трёхзначное число ");
+int text = Convert.ToInt32(Console.ReadLine());
+int number1 = text.ToString().Length;
+
+if (number1 < 3 || number1 > 3)
 {
-    Console.WriteLine("Вы ввели не пятизначное число");
+    Console.WriteLine("Вы ввели не трёхзнанчое число");
 }
 else
 {
-      int number2 = size;
+    int number2 = text;
 
-    number2 = (number2 / 100) % 100;
-    Console.WriteLine(number2 + " Здесь показаны вторая и третья цифра пятизначного числа ");
+    number2 = (number2 / 10) % 10;
+    Console.WriteLine(number2 + " = вторая цифра трёхзначного числа ");
 }
-
-

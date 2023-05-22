@@ -58,10 +58,11 @@
 Console.Clear();
 
 Console.WriteLine("Введите число ");
-int size = Convert.ToInt32(Console.ReadLine());
-int number1 = size.ToString().Length;
+string text = Console.ReadLine();
+int number = Convert.ToInt32(text);
 
-if (number1 >= 4 || number1 <= 3)
+
+if (number1 <= 3 || number1 >= 4)
 {
     Console.WriteLine(" Это третья цифра " + number1);
 }
