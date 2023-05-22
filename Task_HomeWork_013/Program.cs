@@ -37,15 +37,35 @@
 
 
 // // // Второе решение
-// Console.WriteLine("Введите число:  ");
-// string? numA = Console.ReadLine();
+Console.Clear();
+Console.WriteLine("Введите число:  ");
+string? numA = Console.ReadLine();
 
-// if (numA.Length >= 3)
+if (numA.Length >= 3)
+{
+    char[] array = numA.ToCharArray();
+    Console.WriteLine(array[2]);
+}
+else
+{
+    Console.WriteLine("Третьей цифры нет ");
+}
+
+
+// Задача 13: Напишите программу, которая выводит третью
+// цифру заданного числа или сообщает, что третьей цифры нет.
+
+// Console.Clear();
+
+// Console.WriteLine("Введите число ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int number1 = size.ToString().Length;
+
+// if (number1 >= 4 || number1 <= 3)
 // {
-//     char[] array = numA.ToCharArray();
-//     Console.WriteLine(array[2]);
+//     Console.WriteLine(" Это третья цифра " + number1);
 // }
 // else
 // {
-//     Console.WriteLine("Третьей цифры нет ");
+//     Console.WriteLine(" Здесь нет третьей цифры");
 // }
