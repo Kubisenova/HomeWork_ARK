@@ -55,3 +55,33 @@
 //     numbC = (numbC / 10) % 10;
 //     Console.WriteLine(numbC);
 // }
+
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное 
+// число и на выходе показывает вторую цифру этого числа.
+
+
+
+// Решение 1 через рандом 
+// Console.Clear();
+// int number1 = new Random().Next(100, 1000);
+// Console.WriteLine("Трёхзначное число: " + number1);
+// int number2 = (number1 / 10) % 10;
+// Console.WriteLine("Вторая цифра этого числа " + number2);
+
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное 
+// число и на выходе показывает вторую цифру этого числа.
+
+// Решение 2 
+Console.Clear();
+Console.WriteLine("Введите трёхзначное число ");
+string text = Console.ReadLine();
+int number1 = Convert.ToInt32(text);
+(int number2 = (number1 / 10) % 10);
+Console.WriteLine("Вторая цифра это числа: " + number2);
+
+if (number1 > 100 || number1 < 99)
+{
+    Console.WriteLine("Вы ввели НЕ трёхзначное число ");
+}
