@@ -37,3 +37,6 @@ while (x <= N)
     Console.Write("   " + y );
     x++;
 }
+
+
+
