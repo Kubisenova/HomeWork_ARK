@@ -65,7 +65,7 @@ Console.Clear();
 
 Console.WriteLine("Введите трёхзначное число ");
 string name = Console.ReadLine();
-int polind = name.Length();
+int polind = name.Length;
 
 if (polind == 3)
 {
