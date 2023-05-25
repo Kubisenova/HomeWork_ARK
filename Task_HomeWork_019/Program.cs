@@ -61,45 +61,55 @@
 // на вход трёхзначное число и проверяет, 
 // является ли оно палиндромом. 
 
-Console.Clear();
+// Console.Clear();
 
-Console.WriteLine("Введите трёхзначное число ");
-string name = Console.ReadLine();
-int polind = name.Length;
+// Console.WriteLine("Введите трёхзначное число ");
+// string name = Console.ReadLine();
+// int polind = name.Length;
 
-if (polind == 3)
-{
-    if (name[0] == name[2])
-    {
-        Console.WriteLine(" Полиндром");
-    }
-    else
-    {
-        Console.WriteLine(" Не полиндром");
-    }
-}
-else
-{
-    Console.WriteLine(" Вы ввели не трёхзначное число ");
-}
+// if (polind == 3)
+// {
+//     if (name[0] == name[2])
+//     {
+//         Console.WriteLine(" Полиндром");
+//     }
+//     else
+//     {
+//         Console.WriteLine(" Не полиндром");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine(" Вы ввели не трёхзначное число ");
+// }
 
 
 
+// Практикуюсь 
 // Длина строки - количество элементов (букв):
 // string str = "abc"; // три буквы
 // Console.WriteLine(str.Length); // 3. Учитываются пробелы и непечатные символы
 
-// // строка - массив букв
-// // элементы массива считаются с нуля (называется индексом)
-// string str = "Hello";
+string str = "З д р а в с т в у й т е !";
+
+for (int i = 0; i < str.Length; i++)
+{
+    Console.Write(str[i]);
+    // Console.WriteLine(str[1]);
+    // Console.WriteLine(str[2]);
+}
+
+
+
+
 // // char ch = 'a'; // тип данных - символ (буква)
 // // Console.WriteLine(str[1]); // 2 - это 3-я буква, 2 - индекс, то есть l
-// // Console.WriteLine(str[2]); // 0 - это 1-я буква, 0 - индекс, то есть H
+// // Console.WriteLine(str[2]);
+
 // for (int i = 0; i < str.Length; i++)
 // {
 //     Console.WriteLine(str[i]);
 // }
-
 
 
 
