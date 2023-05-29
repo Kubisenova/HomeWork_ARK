@@ -5,6 +5,8 @@
 // 1,0 -3,3 8,0 -9,9
 // 8,0 7,8 -7,1 9,0
 
+Console.Clear();
+
 int rows = ReadInt("Введите количество строк: ");
 int colums = ReadInt("Введите количество столбцов: ");
 double[,] numbers = new double[rows, colums];
@@ -30,7 +32,7 @@ void PrintArray2D(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[i, j] + " ");
+            Console.Write(array[i, j] + "     ");
         }
         Console.WriteLine();
     }
@@ -43,4 +45,3 @@ int ReadInt(string message)
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
 }
-
