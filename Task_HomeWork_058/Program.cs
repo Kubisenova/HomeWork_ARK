@@ -46,8 +46,6 @@ for (int i = 0; i < array.GetLength(0); i++)
 
 PrintArray2D(resultArray);
 
-
-
 // Функция ввода
 int ReadInt(string message)
 {
