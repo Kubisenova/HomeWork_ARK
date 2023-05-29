@@ -6,13 +6,11 @@
 // 8,0 7,8 -7,1 9,0
 
 Console.Clear();
-
 int rows = ReadInt("Введите количество строк: ");
 int colums = ReadInt("Введите количество столбцов: ");
 double[,] numbers = new double[rows, colums];
 FillArray2D(numbers);
 PrintArray2D(numbers);
-
 // Заполнение массива рандомными вещественными числами
 void FillArray2D(double[,] array)
 {
@@ -24,7 +22,6 @@ void FillArray2D(double[,] array)
         }
     }
 }
-
 //  Функция вывода массива в терминал
 void PrintArray2D(double[,] array)
 {
@@ -38,7 +35,6 @@ void PrintArray2D(double[,] array)
     }
     Console.WriteLine();
 }
-
 // Функция ввода 
 int ReadInt(string message)
 {
